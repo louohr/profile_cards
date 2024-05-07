@@ -1,0 +1,166 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #aac9ce;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.row .profile-card {
+    margin-right: 20px;
+}
+
+.row .profile-card:last-child {
+    margin-right: 0;
+}
+
+.profile-card {
+    flex: 1;
+    max-width: 370px;
+    background: #fff;
+    border-radius: 24px;
+    padding: 25px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    margin: 0 10px 20px; /* Adjust margin to add space at the bottom */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center content horizontally */
+}
+
+.profile-card:first-child {
+    margin-right: 20px; /* Add margin on the right side of the first card */
+}
+
+.profile-card:last-child {
+    margin-left: 20px; /* Add margin on the left side of the last card */
+}
+
+.profiles {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile-card .image {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background-color: #4FC1E9;
+    padding: 3px;
+    margin-bottom: 20px; /* Add space below the image */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-card .image:hover .profile-img {
+    transform: scale(1.1); /* Increase the size of the profile picture */
+}
+
+.profile-card .image .profile-img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    transition: transform 0.3s ease; /* Add smooth transition */
+}
+
+.image {
+    position: relative;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background-color: #4FC1E9;
+    padding: 3px;
+    margin-bottom: 10px;
+}
+
+.image .profile-img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid #fff;
+}
+
+.profile-card .text-data {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #333;
+    margin-bottom: 20px; /* Add space below the text */
+}
+
+.text-data .name {
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.text-data .school {
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.profile-card .media-buttons {
+    display: flex;
+    align-items: center;
+    margin-top: 3px;
+}
+
+.media-buttons .link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 18px;
+    height: 34px;
+    width: 34px;
+    border-radius: 50%;
+    margin: 0 8px;
+    background-color: #4070f4;
+    text-decoration: none;
+}
+
+.profile-card .buttons {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.buttons .button {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+    border: none;
+    border-radius: 24px;
+    margin: 0 8px; /* Adjust the margin here */
+    padding: 8px 24px;
+    background-color: #4FC1E9;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.buttons .button:hover {
+    background-color: #0e4bf1;
+}
+
+
+
+
